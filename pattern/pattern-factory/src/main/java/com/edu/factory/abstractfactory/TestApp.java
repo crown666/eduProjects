@@ -5,6 +5,16 @@ package com.edu.factory.abstractfactory;
  */
 public class TestApp {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        ComputerFactory hpComputerFactory = new HpComputerFactory();
+        Keybo hpKeybo = hpComputerFactory.getKeybo();
+        hpKeybo.getName();
+        Mouse hpMouse = hpComputerFactory.getMouse();
+        hpMouse.getName();
+
+        ComputerFactory lenovoComputerFactory = new LenovoComputerFactory();
+        Keybo lenovoKeybo = lenovoComputerFactory.getKeybo();
+        lenovoKeybo.getName();
+        Mouse lenovoMouse = lenovoComputerFactory.getMouse();
+        lenovoMouse.getName();
     }
 }
