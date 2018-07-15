@@ -15,17 +15,16 @@ public class TestApp {
             Thread thread = new Thread() {
                 @Override
                 public void run() {
-                    /*try {
+                    try {
                         countDownLatch.await();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
-                    }*/
-                    LazySingleton.getLazySingleton();
-                    countDownLatch.countDown();
+                    }
+                    LazySingletonOne.getLazySingleton();
                 }
             };
             thread.start();
-
+            countDownLatch.countDown();
         }
         try {
             countDownLatch.await();

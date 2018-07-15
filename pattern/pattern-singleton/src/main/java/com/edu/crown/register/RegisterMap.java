@@ -11,16 +11,7 @@ public class RegisterMap {
     private static Map<String,Object> register = new HashMap<String,Object>();
 
     public static Object getRegisterMap(String name){
-        Object obj;
-        if(name == null){
-            obj = null;
-        }
-        if(register.get(name) == null){
-            obj = null;
-        }else {
-            obj = register.get(name);
-        }
-        return obj;
+        return register.get(name);
     }
 
     public static void setRegister(String name){
