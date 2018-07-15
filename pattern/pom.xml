@@ -13,10 +13,12 @@
         <module>pattern-proxy</module>
         <module>pattern-singleton</module>
         <module>pattern-prototype</module>
-        <module>patter-strategy</module>
         <module>pattern-template</module>
         <module>pattern-delegate</module>
         <module>pattern-adapter</module>
+        <module>pattern-decorator</module>
+        <module>pattern-observer</module>
+        <module>pattern-strategy</module>
     </modules>
 
     <dependencies>
