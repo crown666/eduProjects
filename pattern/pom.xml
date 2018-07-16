@@ -19,6 +19,7 @@
         <module>pattern-decorator</module>
         <module>pattern-observer</module>
         <module>pattern-strategy</module>
+        <module>pattern-demo</module>
     </modules>
 
     <dependencies>
