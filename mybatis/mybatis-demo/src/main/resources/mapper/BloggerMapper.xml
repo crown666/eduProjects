@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.crown.dao.BloggerDao">
+    <select id="selectOne" resultType="com.edu.crown.entity.Blogger">
+        SELECT
+            id,
+            blogger_name AS bloggerName,
+            blogger_desc AS bloggerDesc
+        FROM
+            t_blogger
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectAll" resultType="com.edu.crown.entity.Blogger">
+        SELECT
+            id,
+            blogger_name AS bloggerName,
+            blogger_desc AS bloggerDesc
+        FROM
+            t_blogger
+    </select>
+</mapper>
